@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+</style>
+<body>
+
+    <script>
+        var nome = window.prompt("Digite seu nome e descubra quantas letras ele tem")
+        document.write(`Seu nome é : <strong>${nome}</strong> e tem ${nome.length} letras <br>`) //document.write aparece na tela do navegador
+        document.write(`Seu nome em letras maiúsculas ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em letras minúsculas ${nome.toLocaleLowerCase()}`)
+    </script>
+    
+</body>
+</html>
