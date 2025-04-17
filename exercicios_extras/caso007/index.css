@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(196, 190, 190, 0.616);
+    margin: 0;
+    padding: 20px;
+}
+
+::selection{
+    background-color: rgba(109, 88, 63, 0.705);
+    color: #000000;
+}
+
+h1{
+    text-align: center;
+    color: rgb(148, 33, 33);
+}
+
+section {
+    margin: 0 auto;
+    background: rgb(231, 229, 229);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+p, ul{
+    font-size: 1.2rem;
+}
