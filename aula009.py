@@ -1,0 +1,11 @@
+frase = "Curso em Vídeo Python"
+print(frase[9::3])
+print("O comprimento da string - {}".format((len(frase))))
+print("A letra o aparece {}".format(frase.count('o',0, 14)))
+print("Aparece - {}".format(frase.find("deo")))
+print("Curso" in frase)
+print(frase.replace("Curso", "Aula"))
+print(frase.upper())
+print(frase.lower())
+print(frase.capitalize())
+print(frase.title())
