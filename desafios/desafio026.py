@@ -1,6 +1,4 @@
-frase = input("Digite uma frase: ").upper().strip()
-posicao = frase.find("A")
-if posicao != -1:
-    print(f"A primeira letra 'A' aparece na posição {posicao}")
-else:
-    print("Não existe a letra 'A' na frase")
+frase = str(input('Digite uma frase: ')).upper().strip()
+print('A letra A aparece {} vezes na frase.'.format(frase.count('A')))
+print('A primeira letra A apareceu na posição {}'.format(frase.find('A')+1)) #esse +1 serve para que comece com o 1 e não com o zero
+print('A última letra A apareceu na posição {}'.format(frase.rfind('A')+1))
