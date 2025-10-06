@@ -1,7 +1,7 @@
 salario = float(input("Digite o salario: "))
-aumento = salario * 0.10
-aumento2 = salario * 0.15
 if salario > 1200:
-    print("Seu aumento foi de R${}".format(aumento))
+    aumento = salario + (salario * 10 / 100)
+    print("Quem ganhava R${:.2f} passa a ganhar R${}".format(salario, aumento))
 else:
-    print("Seu aumento foi de R${}".format(aumento2))
+    aumento2 = salario + (salario * 15 / 100)
+    print("Quem ganhava R${:.2f} passa a ganhar R${}".format(salario, aumento2))
