@@ -1,3 +1,4 @@
+import time
 #Caso 1 — O Cofre que Só Abre com Contagem
 contador = 0
 while contador < 10:
@@ -19,5 +20,28 @@ while contador2 > 0:
 print('Sumiu na neblina')
 
 #Caso 4 — O Interrogatório dos Ímpares
-while
-    print('Suspeito encontrado 🔎')
+impar = 0
+while impar < 20:
+    if impar % 2 != 0:
+        print(f'{impar} Suspeito encontrado 🔎')
+    impar += 1
+
+#Caso 5 — A Bomba Relógio Matemática
+bomba = int(input('Insira um numero: '))
+while bomba > 0:
+    print(bomba)
+    time.sleep(1)
+    bomba -= 1
+print('Bomba desativada por Sherlock Holmes')
+
+#Caso 6 — O Cofre que Só Abre com Números Pares
+
+print('Número aceito 🔐')
+
+#Caso 7 — O Viciado no Loop Infinito
+palavra_secreta = 'sair'
+while True:
+    palavra = input('Insira uma palavra: ')
+    if palavra == palavra_secreta:
+        break
+print('Operação encerrada 🗝️')
