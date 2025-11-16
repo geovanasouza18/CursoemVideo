@@ -16,7 +16,7 @@ print('Acesso concedido')
 contador2 = 50
 while contador2 > 0:
     print(contador2)
-    contador2 -= 1
+    contador2 -= 5
 print('Sumiu na neblina')
 
 #Caso 4 — O Interrogatório dos Ímpares
@@ -35,8 +35,11 @@ while bomba > 0:
 print('Bomba desativada por Sherlock Holmes')
 
 #Caso 6 — O Cofre que Só Abre com Números Pares
-
-print('Número aceito 🔐')
+par = 2
+while par <= 30:
+    if par % 2 == 0:
+        print(f'{par} Número aceito 🔐')
+    par += 1
 
 #Caso 7 — O Viciado no Loop Infinito
 palavra_secreta = 'sair'
