@@ -17,4 +17,11 @@ while True:
     if contador2 == 20:
         break
 
-
+#Faça um programa, utilizando while e listas, que permita o usuário realizar o cadastro de um número indeterminado de pessoas enquanto quiser e os mostre na tela ao finalizar.
+listas1 = []
+nome = ''
+while nome != '0':
+    nome = input('Digite um nome ou 0 para sair: ')
+    if nome != '0':
+        listas1.append(nome)
+print(listas1)
