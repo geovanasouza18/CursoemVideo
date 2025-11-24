@@ -1,6 +1,3 @@
-print('-' * 30)
-print('TABUADA — DESAFIO 67')
-print('-' * 30)
 while True:
     num = int(input('Quer ver a tabuada de qual número? '))
     if num < 0:
