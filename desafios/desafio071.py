@@ -10,7 +10,8 @@ while True:
         total -= ced
         totalced += 1
     else:
-        print(f'Total de {totalced} cédulas de R$ {ced}')
+        if totalced > 0:
+            print(f'Total de {totalced} cédulas de R$ {ced}')
         if ced == 50:
             ced = 20
         elif ced == 20:
