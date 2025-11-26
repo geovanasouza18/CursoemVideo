@@ -4,17 +4,17 @@ const = homens = mulheres = 0
 while True:
     print('\033[33m===== CADASTRAR UMA PESSOA =====\033[0m')
     idade = int(input('Idade: '))
-    sexo = ''
-    while sexo not in 'MF':
+    sexo = ' '
+    while sexo not in 'MF': #enquanto não for uma dessas opções, vai perguntar eternamente
         sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
-    if idade > 18:
+    if idade >= 18:
         const += 1
     if sexo == 'M':
         homens += 1
     if sexo == 'F' and idade < 20:
         mulheres += 1
     opcao = ' '
-    while opcao not in 'SN':
+    while opcao not in 'SN': #enquanto não for uma dessas opções, vai perguntar eternamente
         opcao = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if opcao == 'N':
         break

@@ -15,8 +15,9 @@ while True:
     elif valorProduto < maisBaratoValor:
         maisBaratoValor = valorProduto
         maisBaratoNome = nomeProduto
-
-    opcao = str(input('Quer continuar? [S/N] ')).upper().strip()
+    opcao = ' '
+    while opcao not in 'SN':  # enquanto não for uma dessas opções, vai perguntar eternamente
+        opcao = str(input('Quer continuar? [S/N] ')).upper().strip()
     if opcao == 'N':
         print('-------------- FIM DO PROGRAMA ---------------')
         break
