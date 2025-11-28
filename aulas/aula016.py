@@ -6,6 +6,12 @@ print(lanche[-2])
 print(lanche[0::2])
 print(len(lanche))
 
+#Mostrando a tupla em ordem
+print('Mostrando a Tupla em ordem')
+print(sorted(lanche))
+
+print('=' * 30)
+
 #Forma 1
 for i in lanche:
     print(i)
