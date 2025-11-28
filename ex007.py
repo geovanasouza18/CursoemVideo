@@ -1,4 +1,6 @@
 #CASO 01 — O Cofre do Sr. Holmes
+from _ast import While
+
 num1 = int(input('Digite um número: '))
 num2 = int(input('Digite outro número: '))
 print(f'A soma dos números {num1} + {num2} = {num1 + num2}')
@@ -15,3 +17,10 @@ while True:
     const += preco
 
 print(f'O total da soma dos números foi: {const}')
+
+#Caso 03 — O Fantasma que só vai embora com a senha
+senha = 'exit'
+while True:
+    senha = str(input('Digite sua senha: '))
+    if senha == 'exit':
+        break
