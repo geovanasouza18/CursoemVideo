@@ -1,0 +1,7 @@
+tabelaCBF = ('Flamengo', 'Palmeiras', 'Cruzeiro', 'Mirassol', 'Fluminense', 'Botagofo', 'Bahia', 'São Paulo', 'Grêmio', 'Vasco da Gama', 'Bragantino', 'Corinthias', 'Atlético-MG', 'Ceará SC', 'Internacional', 'Santos', 'EC Vitória', 'Fortaleza', 'Juventude', 'Sport do Recife')
+print(f'Lista dos times Brasileirão: {tabelaCBF}')
+print(f'Os 5 primeiros são: {tabelaCBF[:5]}')
+print(f'Os 4 últimos são: {tabelaCBF[-4:]}')
+print(f'Times em ordem alfabética: {sorted(tabelaCBF)}')
+achar = (tabelaCBF.index('Botagofo'))
+print(f'O Botagofo está na {achar}ª posição')

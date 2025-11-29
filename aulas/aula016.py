@@ -5,6 +5,8 @@ print(lanche[1:])
 print(lanche[-2])
 print(lanche[0::2])
 print(len(lanche))
+index1 = lanche.index("Pizza")
+print(f"Índice da Pizza: {index1}")
 
 #Mostrando a tupla em ordem
 print('Mostrando a Tupla em ordem')
