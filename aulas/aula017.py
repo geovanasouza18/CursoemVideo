@@ -43,3 +43,15 @@ print(valores)
 valores.sort()
 print(valores)
 
+valores =list()
+for cont in range(1, 6):
+    valores.append(int(input('Digite um valor: ')))
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}')
+
+list1 = [1, 2, 3, 4, 5]
+list2 = list1.copy()
+list2.append(6)
+print(list1)
+print(list2)
