@@ -9,7 +9,7 @@ for l in range(0, 3):
 #Mostrar a matriz de forma organizada
 for l in range(len(matriz)):
     for c in range(len(matriz[l])):
-        print([matriz[l][c]], end=' ')
+        print(f'[{matriz[l][c]:^5}]', end='')
     print()
 
 #Somar as matrizes
