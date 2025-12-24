@@ -6,5 +6,5 @@ for l in range(0, 3):
 
 for l in range(len(matriz)):
     for c in range(len(matriz[l])):
-        print([matriz[l][c]], end=' ')
+        print(f'[{matriz[l][c]:^5}]', end='')
     print()
