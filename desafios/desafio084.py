@@ -3,7 +3,7 @@ galera = []
 dados = []
 while True:
     dados.append(str(input('Nome: ')))
-    dados.append(int(input('Peso: ')))
+    dados.append(float(input('Peso: ')))
     galera.append(dados[:])
     dados.clear()
     quant += 1
@@ -22,12 +22,12 @@ print(f'Ao todo, você cadastrou {quant} pessoas.')
 print(f'O maior peso foi de {peso_max}Kg. Peso de ', end='')
 for pessoa in galera:
     if pessoa[1] == peso_max:
-        print(pessoa[0], end=', ')
+        print(f'{[pessoa[0]]}', end=' ')
 
 
 print(f'\nO menor peso foi de {peso_min}Kg. Peso de ', end='')
 for pessoa in galera:
     if pessoa[1] == peso_min:
-        print(pessoa[0], end=', ')
+        print(f'{[pessoa[0]]}', end=' ')
 
 
