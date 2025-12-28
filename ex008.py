@@ -9,3 +9,12 @@ elif num2 > num1 and num2 > num3:
 else:
     print(f'O {num3} é o maior número')
 
+#Faça um programa que leia três números e mostre o maior e o menor deles:
+number1 = int(input('Digite o primeiro numero: '))
+number2 = int(input('Digite o segundo: '))
+number3 = int(input('Digite o terceiro: '))
+maior = max(number1, number2, number3)
+menor = min(number1, number2, number3)
+print(f'O maior número é {maior} e o menor número é {menor}')
+
+#
