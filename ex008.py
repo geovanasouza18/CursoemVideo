@@ -30,4 +30,14 @@ lista = [n1, n2, n3]
 lista.sort(reverse=True)
 print(lista)
 
+#Faça um programa que pergunte em que turno você estuda. Peça para digitar:
+turno = input('Que turno você estuda? (M, V, N) ').upper()[0]
+if turno == 'M':
+    print('Bom dia!')
+elif turno == 'V':
+    print('Boa tarde!')
+elif turno == 'N':
+    print('Boa noite!')
+else:
+    print('Valor Inválido!')
 
