@@ -17,4 +17,11 @@ maior = max(number1, number2, number3)
 menor = min(number1, number2, number3)
 print(f'O maior número é {maior} e o menor número é {menor}')
 
+#Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato:
+prod1 = float(input('Digite o valor do produto: '))
+prod2 = float(input('Digite o valor do produto: '))
+prod3 = float(input('Digite o valor do produto: '))
+menor = min(prod1, prod2, prod3)
+print(f'O produto mais barato e que deve comprar é {menor:.2f}')
+
 #
