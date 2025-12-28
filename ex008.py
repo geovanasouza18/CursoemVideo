@@ -24,4 +24,10 @@ prod3 = float(input('Digite o valor do produto: '))
 menor = min(prod1, prod2, prod3)
 print(f'O produto mais barato e que deve comprar é {menor:.2f}')
 
-#
+#Faça um programa que leia três números e mostre-os em ordem decrescente:
+n1, n2, n3 = map(int, input('Digite três valores: ').split())
+lista = [n1, n2, n3]
+lista.sort(reverse=True)
+print(lista)
+
+
