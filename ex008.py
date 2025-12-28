@@ -41,3 +41,30 @@ elif turno == 'N':
 else:
     print('Valor Inválido!')
 
+#Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual
+salario: float = float(input('Digite seu salário atual: '))
+print(f'Seu salário é {salario:.2f}')
+if salario <= 280:
+    aumento = (salario * 20 / 100)
+    novo_salario = salario + aumento
+    print('O percentual de aumento aplicado foi de 20%')
+    print(f'O valor do aumento {aumento:.2f}')
+    print(f'Seu salário com aumento deu: {novo_salario:.2f}')
+elif salario > 280 and salario <= 700:
+    aumento = (salario * 15 / 100)
+    novo_salario = salario + aumento
+    print('O percentual de aumento aplicado foi de 15%')
+    print(f'O valor do aumento {aumento:.2f}')
+    print(f'Seu salário com aumento deu: {novo_salario:.2f}')
+elif salario > 700 and salario <= 1500:
+    aumento = (salario * 10 / 100)
+    novo_salario = salario + aumento
+    print('O percentual de aumento aplicado foi de 10%')
+    print(f'O valor do aumento {aumento:.2f}')
+    print(f'Seu salário com aumento deu: {novo_salario:.2f}')
+else:
+    aumento = (salario * 5 / 100)
+    novo_salario = salario + aumento
+    print('O percentual de aumento aplicado foi de 5%')
+    print(f'O valor do aumento {aumento:.2f}')
+    print(f'Seu salário com aumento deu: {novo_salario:.2f}')
