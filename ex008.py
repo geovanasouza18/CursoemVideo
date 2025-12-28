@@ -68,3 +68,25 @@ else:
     print('O percentual de aumento aplicado foi de 5%')
     print(f'O valor do aumento {aumento:.2f}')
     print(f'Seu salário com aumento deu: {novo_salario:.2f}')
+
+#Faça um programa para o cálculo de uma folha de pagamento
+
+
+#Faça um programa que leia um número e exiba o dia correspondente da semana
+dia = int(input('Digite um número de 1 à 7 para descobrir qual seu dia semana: '))
+if dia == 1:
+    print('Domingo')
+elif dia == 2:
+    print('Segunda')
+elif dia == 3:
+    print('Terça')
+elif dia == 4:
+    print('Quarta')
+elif dia == 5:
+    print('Quinta')
+elif dia == 6:
+    print('Sexta')
+elif dia == 7:
+    print('Sábado')
+else:
+    print('Valor inválido')
