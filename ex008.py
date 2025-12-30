@@ -120,34 +120,46 @@
 # else:
 #     print('Valor inválido')
 
-#Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média.
-print('''
-Média de Aproveitamento  Conceito
-Entre 9.0 e 10.0         A
-Entre 7.5 e 9.0          B
-Entre 6.0 e 7.5          C
-Entre 4.0 e 6.0          D
-Entre 4.0 e zero         E
-''')
-notas1, notas2 = map(float,input('Digite as duas notas do aluno: ').split())
-media = (notas1 + notas2) / 2
-print(f'As notas do aluno foram {notas1} e {notas2}')
-print(f'A média foi de {media:.2f}')
-if 9.0 <= media <= 10.0:
-    print('A')
-    print('Aprovado')
-elif 7.5 <= media <= 9.0:
-    print('B')
-    print('Aprovado')
-elif 6.0 <= media <= 7.5:
-    print('C')
-    print('Aprovado')
-elif 4.0 <= media <= 6.0:
-    print('D')
-    print('Reprovado')
-else:
-    print('E')
-    print('Reprovado')
+# #Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média.
+# print('''
+# Média de Aproveitamento  Conceito
+# Entre 9.0 e 10.0         A
+# Entre 7.5 e 9.0          B
+# Entre 6.0 e 7.5          C
+# Entre 4.0 e 6.0          D
+# Entre 4.0 e zero         E
+# ''')
+# notas1, notas2 = map(float,input('Digite as duas notas do aluno: ').split())
+# media = (notas1 + notas2) / 2
+# print(f'As notas do aluno foram {notas1} e {notas2}')
+# print(f'A média foi de {media:.2f}')
+# if 9.0 <= media <= 10.0:
+#     print('A')
+#     print('Aprovado')
+# elif 7.5 <= media <= 9.0:
+#     print('B')
+#     print('Aprovado')
+# elif 6.0 <= media <= 7.5:
+#     print('C')
+#     print('Aprovado')
+# elif 4.0 <= media <= 6.0:
+#     print('D')
+#     print('Reprovado')
+# else:
+#     print('E')
+#     print('Reprovado')
+
+# #Faça um programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo.
+# A, B, C = map(int, input('Insira três valores para saber se forma um triângulo: ').split())
+# if (A + B > C) and (A + C > B) and (B + C > A):
+#     print('Forma um triângulo')
+#     if A == B == C:
+#         print('Triângulo Equilátero')
+#     elif A == B or A == C or B == C:
+#         print('Triângulo Isóscele')
+#     elif A != B != C:
+#         print('Triângulo Escaleno')
+# else:
+#     print('Não forma um triângulo')
 
 #
-
