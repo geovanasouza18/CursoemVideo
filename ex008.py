@@ -161,3 +161,6 @@ if (A + B > C) and (A + C > B) and (B + C > A):
         print('Triângulo Escaleno')
 else:
     print('Não forma um triângulo')
+
+#Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c.
+
