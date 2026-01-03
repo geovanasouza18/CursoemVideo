@@ -173,3 +173,14 @@ while True:
         break
     else:
         print('Número inválido! Tente novamente')
+
+#Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+while True:
+    nome = str(input("Digite o nome: "))
+    senha = str(input("Digite sua senha: "))
+    if senha == nome:
+        print('Erro! Senha não pode ser igual a usuário. Tente novamente')
+    else:
+        break
+
+#
