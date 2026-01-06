@@ -214,7 +214,6 @@ while True:
     if option == 2:
         break
 
-# Saída final das estatísticas (Final statistics)
 print(f"{total_grenais} grenais")
 print(f"Inter:{inter_wins}")
 print(f"Gremio:{gremio_wins}")
