@@ -187,5 +187,43 @@ while True:
 for num in range(1,21):
     print(num)
 
-#
+#A Federação Gaúcha de Futebol contratou você para escrever um programa para fazer uma estatística do resultado de vários GRENAIS.
+total_grenais = 0
+inter_wins = 0
+gremio_wins = 0
+draws = 0
+
+# Iniciamos o laço de repetição
+while True:
+    inter_goals, gremio_goals = map(int, input('Digite o placar: ').split())
+
+    # Lógica de decisão (Decision-making)
+    total_grenais += 1
+
+    if inter_goals > gremio_goals:
+        inter_wins += 1
+    elif gremio_goals > inter_goals:
+        gremio_wins += 1
+    else:
+        draws += 1
+
+    # Pergunta sobre a repetição
+    print("Novo grenal (1-sim 2-nao)")
+    option = int(input())
+
+    if option == 2:
+        break
+
+# Saída final das estatísticas (Final statistics)
+print(f"{total_grenais} grenais")
+print(f"Inter:{inter_wins}")
+print(f"Gremio:{gremio_wins}")
+print(f"Empates:{draws}")
+
+if inter_wins > gremio_wins:
+    print("Inter venceu mais")
+elif gremio_wins > inter_wins:
+    print("Gremio venceu mais")
+else:
+    print("Nao houve vencedor")
 
