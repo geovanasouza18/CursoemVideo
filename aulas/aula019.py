@@ -18,3 +18,15 @@ print(pessoa.keys())
 print(pessoa.values())
 for k, v in pessoa.items():
     print(f'{k} - {v}')
+
+#Use o copy para criar uma cópia do dicionário
+estado = {}
+brasil = []
+for c in range(0, 3):
+    estado['UF'] = str(input('UF: '))
+    estado['Sigla'] = str(input('Sigla: '))
+    brasil.append(estado.copy())
+for c in brasil:
+    for k in c.values():
+        print(k, end=' - ')
+    print()
