@@ -6,3 +6,8 @@ for k, v in jogadores.items():
     time.sleep(1)
     print(f'O jogador {k} tirou {v}')
 
+print('Ranking dos jogadores')
+
+for i, k in enumerate(sorted(jogadores, key=jogadores.get, reverse=True), 1):
+    time.sleep(1)
+    print(f'{i}º lugar: {k} com {jogadores[k]}.')
