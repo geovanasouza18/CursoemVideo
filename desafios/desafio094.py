@@ -1,6 +1,7 @@
 media = total_mulheres = soma = maior_media = 0
 dicionario = {}
 pessoas = list()
+nome_mulheres = list()
 while True:
     dicionario['nome'] = str(input('Nome: '))
     dicionario['sexo'] = str(input('Sexo [M/F]: ')).upper()
@@ -10,6 +11,7 @@ while True:
     soma += dicionario['idade']
     if dicionario['sexo'] == 'F':
         total_mulheres += 1
+        nome_mulheres.append(dicionario['nome'])
 
     opcao = str(input('Quer continuar? [S/N]')).upper()
     if opcao == 'N':
@@ -20,9 +22,9 @@ media = soma / len(pessoas)
 print('='*45)
 print(f'- O grupo tem {len(pessoas)} pessoas.')
 print(f'- A média do grupo é de {media:.2f} anos.')
-print(f'- As mulheres cadastradas foram {total_mulheres} pessoas.')
+print(f'- As mulheres cadastradas foram {nome_mulheres}.')
 print(f'- Lista de pessoas que estão acima da média:')
 for p in pessoas:
     if p['idade'] > media:
         maior_media +=1
-    print(p)
+        print(p)
