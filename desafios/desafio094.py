@@ -4,7 +4,11 @@ pessoas = list()
 nome_mulheres = list()
 while True:
     dicionario['nome'] = str(input('Nome: '))
-    dicionario['sexo'] = str(input('Sexo [M/F]: ')).upper()
+    while True:
+        dicionario['sexo'] = str(input('Sexo [M/F]: ')).upper()
+        if dicionario['sexo'] in 'MF':
+            break
+        print('ERRO! Digite apenas M ou F.')
     dicionario['idade'] = int(input('Idade: '))
     pessoas.append(dicionario.copy())
 
