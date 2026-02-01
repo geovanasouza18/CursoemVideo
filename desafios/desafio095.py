@@ -2,7 +2,7 @@ jogadores = list()
 jogador = dict()
 
 while True:
-    jogador.clear()  # Limpa o dicionário do jogador anterior
+    jogador.clear()
     jogador['nome'] = str(input('Digite o nome do jogador: '))
     partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou: '))
 
