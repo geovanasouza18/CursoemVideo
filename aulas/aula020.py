@@ -30,3 +30,26 @@ def titulo(txt):
 titulo('Python é muito bom!')
 titulo('Usando parâmetro')
 titulo('Curso em Vídeo')
+
+#Prática
+def soma(a, b):
+    print(f'A soma de {a} e {b}.')
+    soma = a + b
+    print(soma)
+
+soma(6, 5)
+soma(8, 4)
+soma(6, 2)
+
+criar_linha()
+#Usando o * para desempacotar um parâmetro
+def contador (*num):
+    for n in num:
+        print(n)
+
+
+contador(1, 2, 3)
+criar_linha()
+contador(4, 5)
+criar_linha()
+contador(8, 0, 4, 1, 6, 12)
