@@ -20,3 +20,13 @@ print('Aprendendo Função em Python')
 criar_linha()
 print('Com o Prof. Gustavo Guanabara')
 criar_linha()
+
+#Usando o parâmetro
+def titulo(txt):
+    print('='*30)
+    print(txt)
+
+
+titulo('Python é muito bom!')
+titulo('Usando parâmetro')
+titulo('Curso em Vídeo')
