@@ -53,3 +53,16 @@ criar_linha()
 contador(4, 5)
 criar_linha()
 contador(8, 0, 4, 1, 6, 12)
+criar_linha()
+
+def dobro(lista):
+    pos = 0
+    while pos < len(lista):
+        lista[pos] *= 2
+        pos += 1
+
+
+valores = [4, 5, 6, 8, 10]
+print(valores)
+dobro(valores)
+print(valores)
