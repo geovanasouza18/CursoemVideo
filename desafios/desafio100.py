@@ -1,3 +1,1 @@
 #Desafio 100 - Curso em Vídeo
-
-def:
