@@ -90,3 +90,4 @@ def dados_pessoais(**dados):
         print(f'{chave}: {valor}')
 
 dados_pessoais(nome= 'João', idade= 40, carreira= 'Programador')
+
