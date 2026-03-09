@@ -66,3 +66,27 @@ valores = [4, 5, 6, 8, 10]
 print(valores)
 dobro(valores)
 print(valores)
+
+criar_linha()
+
+#Mais exemplos
+#usando o parâmetro *args para números variados
+def maior_30(*numeros):
+    print(numeros)
+    print(type(numeros))
+    for num in numeros:
+        if num > 30:
+            print(num)
+
+maior_30(10, 20, 30, 40, 50, 60)
+
+criar_linha()
+
+#Usando o parâmetro **kwargs
+def dados_pessoais(**dados):
+    print(type(dados))
+
+    for chave, valor in dados.items():
+        print(f'{chave}: {valor}')
+
+dados_pessoais(nome= 'João', idade= 40, carreira= 'Programador')
