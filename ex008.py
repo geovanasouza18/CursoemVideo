@@ -225,3 +225,4 @@ elif gremio_wins > inter_wins:
     print("Gremio venceu mais")
 else:
     print("Nao houve vencedor")
+
